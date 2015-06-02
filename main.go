@@ -1,7 +1,7 @@
 package main
 
 import (
-    "./blog/"
+    "github.com/silenceper/go-blog/blog/"
 )
 
 func main(){

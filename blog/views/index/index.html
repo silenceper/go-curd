@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>index</title>
+    </head>
+    <body>
+        <h5>文章列表</h5>
+        <ul>
+            {{range .list}}
+            <li>
+                <a href="/detail/{{.id}}" >{{.title}}</a>
+                <span> 发布时间:{{.utime|timeFormat}}</span>
+            </li>
+            {{end}}
+            </ul>
+    </body>
+</html>

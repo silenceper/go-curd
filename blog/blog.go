@@ -2,13 +2,20 @@ package blog
 
 import (
     "net/http"
-    "./controllers/"
-    "./config/"
+    "github.com/silenceper/go-blog/blog/controllers/"
+    "github.com/silenceper/go-blog/blog/config/"
+    "github.com/silenceper/go-blog/blog/utils/"
 )
+
+func init(){
+    //映射view函数
+    controller.FuncMap["timeFormat"]=utils.TimeFormat
+}
 
 func parseConfig(){
 
 }
+
 
 func Run(){
     //parse config.json 
