@@ -19,7 +19,7 @@ func Render(tpl string,data map[string]interface{}) ([]byte,error){
         t *template.Template
         err error
     )
-    t = template.New(tpl_path).Funcs(FuncMap)
+    t = template.New(path.Base(tpl_path)).Funcs(FuncMap)
     t,err=t.ParseFiles(tpl_path)
     if err!=nil{
         return nil,err
