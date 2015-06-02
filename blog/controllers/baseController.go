@@ -3,7 +3,7 @@ package controller
 import (
     "path"
     "bytes"
-    "github.com/silenceper/go-blog/blog/config/"
+    "github.com/silenceper/go-blog/blog/config"
     "html/template"
 )
 

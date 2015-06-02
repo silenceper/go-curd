@@ -2,7 +2,7 @@ package controller
 
 import (
     "net/http"
-    "github.com/silenceper/go-blog/blog/models/"
+    "github.com/silenceper/go-blog/blog/models"
 )
 
 func IndexController(w http.ResponseWriter,r *http.Request){

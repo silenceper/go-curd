@@ -2,9 +2,9 @@ package blog
 
 import (
     "net/http"
-    "github.com/silenceper/go-blog/blog/controllers/"
-    "github.com/silenceper/go-blog/blog/config/"
-    "github.com/silenceper/go-blog/blog/utils/"
+    "github.com/silenceper/go-blog/blog/controllers"
+    "github.com/silenceper/go-blog/blog/config"
+    "github.com/silenceper/go-blog/blog/utils"
 )
 
 func init(){
