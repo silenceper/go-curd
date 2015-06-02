@@ -1,7 +1,7 @@
 package model
 
 import (
-    "github.com/silenceper/go-blog/blog/config"
+    "../config"
     _ "github.com/go-sql-driver/mysql"
     "database/sql"
     "log"

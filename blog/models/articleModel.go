@@ -13,10 +13,10 @@ func GetList() []map[string]interface{}{
     
     for rows.Next() {
         m:=make(map[string]interface{})
-        var id int32
+        var id int64
         var title string
         var content string
-        var utime int32
+        var utime int64
         err=rows.Scan(&id,&title,&content,&utime)
         m["id"]=id
         m["title"]=title
