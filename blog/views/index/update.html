@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>index</title>
+    </head>
+    <body>
+        <h5>新建文章</h5>
+        <form action="" method="post">
+        <div>
+        
+            标题:<input type="text" size=40 name="title" value="{{.article.title}}"><br/>
+            内容:<textarea rows="40" cols="100" name="content" >{{.article.content}}</textarea>
+        </div>
+        <input type="hidden" name="id" value="{{.article.id}}">
+        <input type="submit" value="提交">
+        </form>
+    </body>
+</html>

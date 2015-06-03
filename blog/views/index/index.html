@@ -7,8 +7,10 @@
         <ul>
             {{range .list}}
             <li>
-                <a href="/detail/{{.id}}" >{{.title}}</a>
+                <a href="/detail?id={{.id}}" >{{.title}}</a>
                 <span> 发布时间:{{.utime|timeFormat}}</span>
+                <a href="/update?id={{.id}}">修改</a>        
+                <a href="/delete?id={{.id}}">删除</a>        
             </li>
             {{end}}
             </ul>
